@@ -49,34 +49,6 @@ Run the complete analysis:
 python run.py --all
 ```
 
-### Specific Analyses
-
-Run only the Binary AlphaDigits analysis:
-
-```bash
-python run.py --alphadigits
-```
-
-Run only the MNIST analysis:
-
-```bash
-python run.py --mnist
-```
-
-Run only the visualization tests:
-
-```bash
-python run.py --viz
-```
-
-### Advanced Options
-
-Set a custom random seed:
-
-```bash
-python run.py --all --seed 123
-```
-
 ## Output
 
 The analysis generates various plots and visualizations that are saved in the `results` directory:
