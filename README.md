@@ -14,7 +14,7 @@ This project implements Restricted Boltzmann Machines (RBM), Deep Belief Network
 
 1. Clone the repository:
 ```bash
-git clone <[repository-url](https://github.com/essalihanasse/DL2.git)>
+git clone https://github.com/essalihanasse/DL2.git
 cd deep-learning-project
 ```
 
