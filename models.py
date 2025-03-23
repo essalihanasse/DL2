@@ -3,6 +3,7 @@ from utils import *
 import matplotlib.pyplot as plt
 import tensorflow as tf
 from tensorflow import keras
+import time
 from tensorflow.keras import layers, models
 from scipy.io.matlab import loadmat
 
