@@ -46,7 +46,7 @@ Before running the code, download the required datasets:
 Run the complete analysis:
 
 ```bash
-python run.py --all
+python main.py 
 ```
 
 ## Output
