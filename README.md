@@ -37,7 +37,7 @@ Before running the code, download the required datasets:
 - `models.py`: Implementations of RBM, DBN, and DNN models
 - `utils.py`: Utility functions for data loading and model operations
 - `test_rbm_dbn.py`: Test script for RBM and DBN models on Binary AlphaDigits
-- `run.py`: Runner script to execute different experiments
+
 
 ## How to Run
 
