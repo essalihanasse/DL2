@@ -1,6 +1,6 @@
 # Deep Learning Project: RBM, DBN, and DNN Implementation
 
-This project implements Restricted Boltzmann Machines (RBM), Deep Belief Networks (DBN), and Deep Neural Networks (DNN) for classification of handwritten digits from the MNIST dataset. It also includes analysis on the Binary AlphaDigits dataset for validation of the generative models.
+This project implements Restricted Boltzmann Machines (RBM), Deep Belief Networks (DBN), and Deep Neural Networks (DNN) for classification of handwritten digits from the MNIST dataset. It includes a comparative analysis of pretrained versus randomly initialized networks.
 
 ## Requirements
 
@@ -9,6 +9,19 @@ This project implements Restricted Boltzmann Machines (RBM), Deep Belief Network
 - TensorFlow 2.x
 - Matplotlib
 - SciPy
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd deep-learning-project
+```
+
+2. Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
 
 ## Dataset Setup
 
@@ -24,7 +37,7 @@ Before running the code, download the required datasets:
 - `models.py`: Implementations of RBM, DBN, and DNN models
 - `utils.py`: Utility functions for data loading and model operations
 - `test_rbm_dbn.py`: Test script for RBM and DBN models on Binary AlphaDigits
-- `main_dnn_mnist.py`: Detailed analysis of DNN performance on MNIST dataset
+- `run.py`: Runner script to execute different experiments
 
 ## How to Run
 
@@ -33,7 +46,7 @@ Before running the code, download the required datasets:
 Run the complete analysis:
 
 ```bash
-python main.py
+python run.py --all
 ```
 
 ### Specific Analyses
@@ -41,27 +54,27 @@ python main.py
 Run only the Binary AlphaDigits analysis:
 
 ```bash
-python main.py --alphadigits
+python run.py --alphadigits
 ```
 
 Run only the MNIST analysis:
 
 ```bash
-python main.py --mnist
+python run.py --mnist
 ```
 
-### Individual Tests
-
-Test RBM and DBN on Binary AlphaDigits:
+Run only the visualization tests:
 
 ```bash
-python test_rbm_dbn.py
+python run.py --viz
 ```
 
-Run the detailed DNN analysis on MNIST:
+### Advanced Options
+
+Set a custom random seed:
 
 ```bash
-python main_dnn_mnist.py
+python run.py --all --seed 123
 ```
 
 ## Output
@@ -74,7 +87,7 @@ The analysis generates various plots and visualizations that are saved in the `r
    - Error rate vs number of neurons per layer
    - Error rate vs number of training samples
 
-## Model Implementations
+## Implementations
 
 ### Restricted Boltzmann Machine (RBM)
 
@@ -108,4 +121,6 @@ The comparison is done across different configurations:
 - Varying number of neurons per layer
 - Varying amount of training data
 
-The results demonstrate the advantage of unsupervised pre-training, especially with limited training data or deeper architectures.
+## Report
+
+A comprehensive report of the findings is available in the `report.pdf` file.
